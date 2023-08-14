@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi&display=swap');
+
+:root {
+    --fontec: 'Bebas Neue', sans-serif;
+    --fontep: 'Noto Serif Vithkuqi', serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 60vh;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 40px;
+    font-variant: small-caps;
+    font-family: var(--fontec);
+    font-size: 3em;
+}
+
+header > p {
+    padding-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--fontep);
+    font-size: 1em;
+}
+
+section.normal {
+    border-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#i1 {
+    background-image: url(../imagens/img01.jpg);
+    background-position: left center;
+}
+
+section#i2 {
+    background-image: url(../imagens/img02.jpg);
+    background-position: center center;
+}
+
+footer > p {
+    font-family: var(--fontep);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 6px;
+}
+
